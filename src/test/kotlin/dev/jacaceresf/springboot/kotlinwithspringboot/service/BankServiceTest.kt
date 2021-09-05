@@ -16,17 +16,14 @@ internal class BankServiceTest {
 
     @Test
     fun `should call its data source to retrieve banks`() {
-
         /// given
         /// since the datasource is a mock, we've got to define its behavior before call any method.
         ///       every { dataSource.retrieveBanks() } returns emptyList()
 
         /// when
         val banks = bankService.getBanks()
-
         /// then
         verify(exactly = 1) { dataSource.retrieveBanks() } ///checks if the service actually called to the repository function.
-
     }
 
 }

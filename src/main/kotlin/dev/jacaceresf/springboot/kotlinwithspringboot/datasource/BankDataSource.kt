@@ -9,4 +9,6 @@ interface BankDataSource {
      */
     fun retrieveBanks(): Collection<Bank>
 
+    fun getBank(accountNumber: String): Bank
+
 }
