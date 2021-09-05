@@ -9,7 +9,7 @@ import java.util.*
 class MockBankDataSource : BankDataSource {
 
     private val banks = listOf(
-        Bank(UUID.randomUUID().toString(), 1.1, 1),
+        Bank("abcdef", 1.1, 1),
         Bank(UUID.randomUUID().toString(), 17.1, 1),
         Bank(UUID.randomUUID().toString(), 0.0, 13)
     )
